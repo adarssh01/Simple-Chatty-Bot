@@ -52,10 +52,10 @@ public class SimpleBot {
         System.out.println("3. To determine the execution time of a program.");
         System.out.println("4. To interrupt the execution of a program.");
 
-        String Answer = scanner.next();
-        int AnswerInt = Integer.parseInt(Answer);
-        while (AnswerInt == 2){
+        int Answer = scanner.nextInt();
+        while (Answer != 2){
             System.out.println("Please, try again.");
+            Answer = scanner.nextInt();
         }
 
 
